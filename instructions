@@ -1,8 +1,9 @@
-#Changing Font Size 
+######Changing Font Size 
 setfont ter-132n 
-(143 means large)
+(143 means large) 
 
-#Connect to a Network
+
+######Connect to a Network
 >iwctl
 >device list 
 >station wlan0 get-networks
@@ -10,7 +11,28 @@ setfont ter-132n
 (Password)
 [exit]
 
-#To test your network data packets
+
+#####To test your network data packets
 >ping google.com
+[Press Ctrl+C to exit]
+
+#####Synchronize and update the packages 
+>pacman -Syy
 
 
+#####Configure Disk and partitions
+>lsblk               (To list the drives)
+>fdisk -l            (To view detailed info about the drives)
+>gdisk /dev/sda      (To format the drives.... Replace sda with your drive name) 
+>x       (To enter expert mode) 
+>z       (erase the drive)
+>Y       (yes) 
+>lsblk   (Check your drive) 
+
+
+#####ArchLinux Keyring & Installation
+>pacman -S archlinux-keyring
+>pacman -Sy archinstall
+>archinstall
+
+[You'll now see a list and bunch of options available on the screen]
