@@ -2,4 +2,15 @@
 setfont ter-132n 
 (143 means large)
 
+#Connect to a Network
+>iwctl
+>device list 
+>station wlan0 get-networks
+>station wlan0 connect ABCNAME
+(Password)
+[exit]
+
+#To test your network data packets
+>ping google.com
+
 
