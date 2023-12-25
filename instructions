@@ -1,6 +1,6 @@
 ######Changing Font Size 
 setfont ter-132n 
-(143 means large) 
+(132 means large) 
 
 
 ######Connect to a Network
@@ -43,7 +43,7 @@ setfont ter-132n
 
 #Lang: --
 
-#Mirrors: -- or define as per country by [Mirrors>Mirror Region> Country name]
+#Mirrors: -- OR define as per country by Mirrors>Mirror Region> Country name 
 
 #Locales: --
 
@@ -81,5 +81,17 @@ Greeter: --
 #Additional packages (package name separated by a space) 
 sudo nano vim neofetch git htop bpytop libreoffice-fresh kate 
 
-#
+#Netowork Configuration
+Use Network Manager
+
+#Timezone (Press / to search) 
+
+#Automatic Time Sync(NTP) 
+True
+
+#Optional Repositories 
+>Multilib  (For opening 32 bit software packages) 
+
+
+#####~INSTALL~#####
 
