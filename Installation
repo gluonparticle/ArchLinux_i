@@ -33,6 +33,8 @@ setfont ter-132n
 #####ArchLinux Keyring & Installation
 >pacman -S archlinux-keyring
 >pacman -Sy archinstall
+
+**Look for any errors in this prompt, if any follow the instructions**
 >archinstall
 
 [You'll now see a list and bunch of options available on the screen]
