@@ -36,3 +36,50 @@ setfont ter-132n
 >archinstall
 
 [You'll now see a list and bunch of options available on the screen]
+
+
+#####Archinstall_Interface_Instructions
+[ "--" means don't change]
+
+#Lang: --
+
+#Mirrors: -- or define as per country by [Mirrors>Mirror Region> Country name]
+
+#Locales: --
+
+#Disk config
+Best Effort default Partition > Select disk name > File System as btrfs > yes > yes (Default options) 
+
+#Disk Encryption
+Leave it blank. Unless you want to enter a password before every boot (Recommended for Servers)
+
+#Bootloader
+Grub
+
+#Unified Kernel images --
+
+#Swap 
+True 
+
+#Hostname -- 
+
+#Root password 
+Enter a really strong passwd
+
+#User acc (Create one cuz it's not recommended to login as root everytime) 
+>Add a user > username > passwd > (Should user be a super user/sudo?) Yes > back
+
+#Profile 
+>Type >Desktop >Kde       (Choose as per your own req) 
+Graphics Driver: Select the appropriate brand
+Greeter: -- 
+
+#Audio : Pipewire
+
+#Kernels: --   (Linux) 
+
+#Additional packages (package name separated by a space) 
+sudo nano vim neofetch git htop bpytop libreoffice-fresh kate 
+
+#
+
