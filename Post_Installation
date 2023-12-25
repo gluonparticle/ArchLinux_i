@@ -18,8 +18,17 @@ yay -S brave-bin
 yay -S visual-studio-code-bin
 
 
-#####Some Programming Languages 
+######Some Programming Languages######
 
 #Python
 sudo pacman -S python3
+python --version
+
+#Java 
+sudo pacman -S jdk-openjdk
+java --version
+
+#Installing pip for external Python libraries
+
+(Creating a virtual Environment) 
 
