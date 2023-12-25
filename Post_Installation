@@ -1,1 +1,21 @@
+#####Installing the AUR Helper yay for installing Apps 
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+yay --version
+
+#####Installing important applications 
+
+1. Google Chrome 
+yay -S google-chromw
+
+2. Brave Browser 
+yay -S brave-bin
+
+3. Visual Studio Code
+yay -S visual-studio-code-bin
+
+
+#####Installing some Languages 
+sudo pacman -S python-3
 
