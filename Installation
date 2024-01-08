@@ -16,6 +16,10 @@ setfont ter-132n
 >ping google.com
 [Press Ctrl+C to exit]
 
+If you get "Address unreachable" error, it's cuz your wifi frequency, 
+Try:
+>ping -4 google.com
+
 #####Synchronize and update the packages 
 >pacman -Syy
 
