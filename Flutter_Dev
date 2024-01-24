@@ -1,0 +1,9 @@
+#####If you have yay installed#####
+yay -Sy snapd
+
+
+sudo systemctl enable snapd --now
+
+sudo systemctl enable snapd.apparmor --now #start snap applications
+
+sudo ln -s /var/lib/snapd/snap /snap #optional: classic snap support
