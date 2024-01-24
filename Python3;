@@ -1,0 +1,23 @@
+###Installing Python###
+yay -S python3
+
+
+~~~~To create and manage external libraries of Python, it's always recommended to use a Virtual_Environment to prevent conflict between system packages and Python libraries~~~
+
+###Creating a folder named 'Tachyon'
+>mkdir Tachyon
+
+###Creating a virtual Environment### 
+
+>cd Tachyon   (We change the path and create a vir_env in the folder)
+
+###Virtual_Environment named 'Electron'
+>python -m venv Electron
+>source Electron/bin/activate      (To activate the Virtual environment) 
+
+###To install Python packages now###
+>sudo pacman -S python-xyz      (for xyz package name)
+
+
+##To deactivate, use###
+>deactivate
