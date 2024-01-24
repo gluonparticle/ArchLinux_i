@@ -45,7 +45,6 @@ python --version
 sudo pacman -S jdk-openjdk
 java --version
 
-#Installing pip for external Python libraries
-
-(Creating a virtual Environment) 
+#Flutter
+yay -S flutter
 
