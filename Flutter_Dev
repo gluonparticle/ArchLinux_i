@@ -1,3 +1,11 @@
+#Direct Installation#
+
+yay -Sy flutter
+
+
+
+
+
 #####If you have yay installed#####
 yay -Sy snapd
 
