@@ -4,11 +4,22 @@
 >sudo btrfs filesystem mkswapfile --size 2G swapfile
 >sudo swapon swapfile
 
+
+
 #####Installing the AUR Helper yay for installing Apps#####
 >git clone https://aur.archlinux.org/yay.git
 >cd yay
 >makepkg -si
 >yay --version
+
+
+#####Installing the Software Deployment Tool "snapd"#####
+>yay -Sy snapd
+
+
+>sudo systemctl enable snapd --now
+>sudo systemctl enable snapd.apparmor --now #start snap applications
+>sudo ln -s /var/lib/snapd/snap /snap #optional: classic snap support
 
 ####Browser
 
