@@ -5,3 +5,30 @@
 [Replace /path/to/mounted/btrfs with the path to btrfs filesystem you wanna shrink]
 sudo btrfs filesystem resize -G /path/to/mounted/btrfs
 
+[If you're unsure of the path to where the btrfs filesystem is mounted use:]
+>df -h
+
+#####Here's the output of the command I got#####
+
+[gluonparticle@archlinux ~]$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+dev             7.7G     0  7.7G   0% /dev
+run             7.7G  2.3M  7.7G   1% /run
+efivarfs        268K  215K   49K  82% /sys/firmware/efi/efivars
+/dev/nvme0n1p2  914G   39G  875G   5% /
+tmpfs           7.7G   55M  7.7G   1% /dev/shm
+/dev/loop0      128K  128K     0 100% /var/lib/snapd/snap/bare/5
+/dev/loop2       64M   64M     0 100% /var/lib/snapd/snap/core20/2105
+/dev/loop4       92M   92M     0 100% /var/lib/snapd/snap/gtk-common-themes/1535
+/dev/loop1       56M   56M     0 100% /var/lib/snapd/snap/core18/2812
+/dev/loop5      5.4M  5.4M     0 100% /var/lib/snapd/snap/ksnip/488
+/dev/loop7       41M   41M     0 100% /var/lib/snapd/snap/snapd/20671
+/dev/loop3      207M  207M     0 100% /var/lib/snapd/snap/flutter/145
+/dev/loop6      290M  290M     0 100% /var/lib/snapd/snap/kde-frameworks-5-core18/35
+/dev/nvme0n1p2  914G   39G  875G   5% /.snapshots
+/dev/nvme0n1p2  914G   39G  875G   5% /home
+/dev/nvme0n1p2  914G   39G  875G   5% /var/cache/pacman/pkg
+/dev/nvme0n1p2  914G   39G  875G   5% /var/log
+tmpfs           7.7G  3.7M  7.7G   1% /tmp
+/dev/nvme0n1p1  511M   90M  422M  18% /boot
+tmpfs           1.6G   60K  1.6G   1% /run/user/1000
