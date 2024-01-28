@@ -35,6 +35,10 @@ tmpfs           7.7G  3.7M  7.7G   1% /tmp
 tmpfs           1.6G   60K  1.6G   1% /run/user/1000
 
 [If you see, the main partition is at 4th number and is /dev/nvme0n1p2. It is mounted on /  ]
+[The path is most likely gonna be the same as indicated]
 [If you've trouble identifying which partition it is, just find the partition with the largest size. That's most likely gonna be it]
 
-Replace / with whatever you see as mounted path in the command: sudo btrfs filesystem resize -8G /path/to/mounted/btrfs
+[Replace / with whatever you see as mounted path in the command]
+>sudo btrfs filesystem resize -8G /
+
+[Replace / with your path] 
