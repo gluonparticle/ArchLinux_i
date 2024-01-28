@@ -1,0 +1,23 @@
+[For displaying the current partitions]
+>lsblk
+
+The output for me is: 
+
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0     4K  1 loop /var/lib/snapd/snap/bare/5
+loop1         7:1    0  55.7M  1 loop /var/lib/snapd/snap/core18/2812
+loop2         7:2    0  63.9M  1 loop /var/lib/snapd/snap/core20/2105
+loop3         7:3    0  91.7M  1 loop /var/lib/snapd/snap/gtk-common-themes/1535
+loop4         7:4    0 289.8M  1 loop /var/lib/snapd/snap/kde-frameworks-5-core18/35
+loop5         7:5    0 206.3M  1 loop /var/lib/snapd/snap/flutter/145
+loop6         7:6    0  40.4M  1 loop /var/lib/snapd/snap/snapd/20671
+loop7         7:7    0   5.4M  1 loop /var/lib/snapd/snap/ksnip/488
+zram0       254:0    0     4G  0 disk [SWAP]                     -----------------------------------------THIS IS THE CURRENTLY ACTIVE SWAP 
+nvme0n1     259:0    0 953.9G  0 disk 
+├─nvme0n1p1 259:1    0   512M  0 part /boot
+├─nvme0n1p2 259:2    0 930.8G  0 part /home
+│                                     /var/cache/pacman/pkg
+│                                     /var/log
+│                                     /.snapshots
+│                                     /
+
