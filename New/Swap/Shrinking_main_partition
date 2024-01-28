@@ -1,6 +1,4 @@
-~~~The default Swap (Virtual Memory Size) is 4GB. If you wish to increase the Swap size, you must follow these instructions~~~
-
-##Shrink the exisitng btrfs (butter fs) filesystem 
+~~~Shrink the exisitng btrfs (butter fs) filesystem~~~
 
 [Replace /path/to/mounted/btrfs with the path to btrfs filesystem you wanna shrink]
 [Replace 8G with the desired Swap size]
