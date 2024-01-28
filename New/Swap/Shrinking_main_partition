@@ -3,7 +3,7 @@
 ##Shrink the exisitng btrfs (butter fs) filesystem 
 
 [Replace /path/to/mounted/btrfs with the path to btrfs filesystem you wanna shrink]
-sudo btrfs filesystem resize -G /path/to/mounted/btrfs
+sudo btrfs filesystem resize -8G /path/to/mounted/btrfs
 
 [If you're unsure of the path to where the btrfs filesystem is mounted use:]
 >df -h
@@ -11,6 +11,7 @@ sudo btrfs filesystem resize -G /path/to/mounted/btrfs
 #####Here's the output of the command I got#####
 
 [gluonparticle@archlinux ~]$ df -h
+
 Filesystem      Size  Used Avail Use% Mounted on
 dev             7.7G     0  7.7G   0% /dev
 run             7.7G  2.3M  7.7G   1% /run
@@ -32,3 +33,8 @@ tmpfs           7.7G   55M  7.7G   1% /dev/shm
 tmpfs           7.7G  3.7M  7.7G   1% /tmp
 /dev/nvme0n1p1  511M   90M  422M  18% /boot
 tmpfs           1.6G   60K  1.6G   1% /run/user/1000
+
+[If you see, the main partition is at 4th number and is /dev/nvme0n1p2. It is mounted on /  ]
+[If you've trouble identifying which partition it is, just find the partition with the largest size. That's most likely gonna be it]
+
+Replace / with whatever you see as mounted path in the command: sudo btrfs filesystem resize -8G /path/to/mounted/btrfs
