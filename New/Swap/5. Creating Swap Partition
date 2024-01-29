@@ -17,3 +17,6 @@
 Add the following line and save::: 
 
 echo '/dev/nvme0n1p3 none swap defaults 0 0' | sudo tee -a /etc/fstab
+
+###Verify the Swap Creation
+>sudo swapon --show
