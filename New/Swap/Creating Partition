@@ -1,5 +1,0 @@
-Use a partitioning tool like parted to resize the partition. If you want to decrease the size from the end of the partition, you would do something like:
-
-sudo parted /dev/nvme0n1 resizepart 2 1000GB
-
-This assumes that your Btrfs partition is the second partition (nvme0n1p2) and you want to resize it to 1000GB. Adjust the values based on your specific setup.

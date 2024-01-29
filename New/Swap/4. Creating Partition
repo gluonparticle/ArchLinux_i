@@ -1,0 +1,26 @@
+Use a partitioning tool like parted to resize the partition. If you want to decrease the size from the end of the partition, you would do something like:
+
+sudo parted /dev/nvme0n1 resizepart 2 1000GB
+
+This assumes that your Btrfs partition is the second partition (nvme0n1p2) and you want to resize it to 1000GB. Adjust the values based on your specific setup.
+
+
+
+Shrinking a Btrfs filesystem alone won't decrease the size of the partition. After shrinking the Btrfs filesystem, you need to resize the underlying partition to reclaim the unused space.
+
+Here are the steps to shrink the Btrfs filesystem and then resize the partition:
+
+Shrink the Btrfs Filesystem:
+
+bash
+Copy code
+sudo btrfs filesystem resize -20G /path/to/mounted/btrfs
+Replace /path/to/mounted/btrfs with the actual mount point of your Btrfs filesystem. This command shrinks the filesystem by 20GB.
+
+Resize the Partition:
+
+Use a partitioning tool like parted to resize the partition. If you want to decrease the size from the end of the partition, you would do something like:
+bash
+Copy code
+sudo parted /dev/nvme0n1 resizepart 2 1000GB
+This assumes that your Btrfs partition is the second partition (nvme0n1p2) and you want to resize it to 1000GB. Adjust the values based on your specific setup.
