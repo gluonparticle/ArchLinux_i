@@ -1,0 +1,7 @@
+Edit: /etc/sysctl.conf
+Add the following: 
+>vm.swappiness=your_desired_value
+
+
+###Apply the changes with###
+sudo sysctl -p
