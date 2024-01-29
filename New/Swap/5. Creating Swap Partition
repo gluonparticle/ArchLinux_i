@@ -1,6 +1,19 @@
 ###Create a new partition### 
 
->sudo parted /dev/sdX mkpart primary ext4 1016GB 1024GB
+>sudo parted /dev/sdX mkpart primary linux-swap 1016GB 1024GB
 
 [Replace /dev/sdX with your disk identifier]
 [1016G 1024G means the partition will be created at the end from 1016G to 1024G]
+
+##Make Swap
+>sudo mkswap /dev/nvme0n1p3
+
+###Activate Swap 
+>sudo swapon /dev/nvme0n1p3
+
+###Update /etc/fstab
+>sudo nano /etc/fstab
+
+Add the following line and save::: 
+
+echo '/dev/nvme0n1p3 none swap defaults 0 0' | sudo tee -a /etc/fstab
