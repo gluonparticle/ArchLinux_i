@@ -23,3 +23,5 @@ nvme0n1     259:0    0 953.9G  0 disk
 
 [Deactivate the zram0 Swap. In case the name is different,  replace it with whatever you wish]
 >sudo swapoff /dev/zram0
+>sudo wipefs --all --force /dev/zram0
+>sudo zramctl --reset /dev/zram0
