@@ -1,0 +1,3 @@
+###Create a new partition### 
+
+>sudo parted /dev/sdX mkpart primary ext4 1016GB 1024GB
