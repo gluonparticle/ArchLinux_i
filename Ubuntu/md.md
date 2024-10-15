@@ -1,4 +1,4 @@
-clear && ros2 launch ebot_description ebot_gazebo_launch.py 
+clear && ros2 launch ebot_description ebot_gazebo_launch.py
 
 clear && source /opt/ros/humble/setup.bash && ros2 launch ebot_nav2 ebot_bringup_launch.py
 
