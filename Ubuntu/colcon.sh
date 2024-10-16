@@ -1,3 +1,4 @@
+cd
 mkdir -p colcon_ws
 mkdir -p colcon_ws/src
 cd ~/colcon_ws
