@@ -34,7 +34,9 @@ sudo apt install ros-humble-nav2-bringup   -y
 sudo apt install ros-humble-slam-toolbox   -y
 sudo apt install ros-humble-robot-localization   -y
 sudo apt install ros-humble-joint-state-publisher-gui   -y
+sudo apt install kate -y
 sudo apt install ros-humble-xacro   -y && clear  
+
 
 
 os2 pkg list | grep slam_toolbox
