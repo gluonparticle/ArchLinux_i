@@ -11,6 +11,11 @@ cd ~/colcon_ws/src/  # assuming your workspace is named as colcon_ws
 cd ~/colcon_ws
 
 
+colcon build --symlink-install
+
+source ~/.bashrc
+clear
+
 
 
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
@@ -21,11 +26,6 @@ echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
 echo "export _colcon_cd_root=/opt/ros/humble/" >> ~/.bashrc
 source ~/.bashrc
 
-
-colcon build --symlink-install
-
-source ~/.bashrc
-clear
 
 
 
