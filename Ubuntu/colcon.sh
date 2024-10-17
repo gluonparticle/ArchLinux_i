@@ -1,8 +1,9 @@
 cd
 mkdir -p colcon_ws
-mkdir -p colcon_ws/src
+
+
 cd ~/colcon_ws
-git clone https://github.com/eYantra-Robotics-Competition/eyrc-24-25-logistic-cobot.git ./src/
+git clone https://github.com/gluonparticle/Logistic-coBot.git 
 
 cd ~/colcon_ws/src/  # assuming your workspace is named as colcon_ws
 . requirements.sh
